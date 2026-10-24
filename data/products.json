@@ -1,0 +1,10 @@
+[
+  { "id": 10, "name": "Crème Hydratante Visage", "category": "Hydratation", "price": 350, "stock": 15 },
+  { "id": 11, "name": "Sérum Vitamine C", "category": "Soins Visage", "price": 480, "stock": 10 },
+  { "id": 12, "name": "Nettoyant Moussant Doux", "category": "Nettoyage", "price": 220, "stock": 20 },
+  { "id": 13, "name": "Masque Argile Purifiant", "category": "Nettoyage", "price": 180, "stock": 25 },
+  { "id": 14, "name": "Lait Corporel Nourrissant", "category": "Hydratation", "price": 290, "stock": 12 },
+  { "id": 15, "name": "Crème Anti-Âge Rétinol", "category": "Soins Visage", "price": 650, "stock": 8 },
+  { "id": 16, "name": "Huile d'Argan Bio", "category": "Hydratation", "price": 390, "stock": 18 },
+  { "id": 17, "name": "Eau Micellaire 400ml", "category": "Nettoyage", "price": 150, "stock": 30 }
+]
