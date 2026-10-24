@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeautyCare — Gestion des ventes skincare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+  <header class="hero py-4 mb-4">
+    <div class="container">
+      <h1 class="h3 mb-1">🧴 BeautyCare</h1>
+      <p class="mb-0 opacity-75">Application de gestion des ventes de produits skincare</p>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+
+    <div id="errorBox" class="alert alert-danger d-none" role="alert"></div>
+
+    <section id="indicators" class="row g-3 mb-4">
+    </section>
+
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <div class="row g-3 align-items-end">
+
+          <div class="col-md-5">
+            <label for="searchInput" class="form-label">Recherche par client</label>
+            <input type="text" id="searchInput" class="form-control"
+                   placeholder="Ex : Nadia, Yasmine...">
+          </div>
+
+          <div class="col-md-4">
+            <label for="filterStatus" class="form-label">Statut de la commande</label>
+            <select id="filterStatus" class="form-select">
+              <option value="">Tous les statuts</option>
+              <option value="Livree">Livrée</option>
+              <option value="En attente">En attente</option>
+              <option value="Annulee">Annulée</option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="filterCategory" class="form-label">Catégorie de produit</label>
+            <select id="filterCategory" class="form-select">
+            </select>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="card shadow-sm">
+      <div class="card-header bg-white fw-bold">Commandes</div>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>Client</th>
+              <th>Ville</th>
+              <th>Date</th>
+              <th>Statut</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Détail de la commande</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body" id="orderDetailContent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.hero {
+  background: linear-gradient(135deg, #e8b4b8 0%, #f5d5c8 100%);
+  color: #5a3a3a;
+}
+
+.indicator-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.indicator-card h3 {
+  color: #b76e79;
+}
